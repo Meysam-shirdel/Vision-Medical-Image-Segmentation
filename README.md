@@ -15,7 +15,7 @@ Intestinal cancer, commonly referring to colorectal cancer (cancer of the colon 
     <img src="title2.jpg" alt="Logo" width="" height="300">
 </div>
 
-New techniques, such as computer vision using deep learning models, can aid in the segmentation of tumors on MRI images.
+New techniques, such as computer vision using deep learning models, can aid in the segmentation of tumors on MRI images. In this work, I trained a deep learning model to outline the position of the stomach and intestines in order to help radiation oncologists to perform their task faster which would allow more patients to get more effective treatment.
 
 
 ## 2. Related Works
