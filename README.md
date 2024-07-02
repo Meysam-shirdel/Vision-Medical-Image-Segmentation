@@ -64,7 +64,7 @@ This section delves into the practical aspects of the project's implementation.
 Under this subsection, you'll find information about the dataset used for the medical image segmentation task. It includes details about the dataset source, size, composition, preprocessing, and loading applied to it.
 [Dataset](https://www.kaggle.com/competitions/uw-madison-gi-tract-image-segmentation/data)
 
-UW-Madison GI Tract Image Segmentation Dataset
+##### UW-Madison GI Tract Image Segmentation Dataset
 
 The UW-Madison GI Tract Image Segmentation dataset consists of multi-class segmentation masks for different parts of the gastrointestinal tract, such as the stomach, large intestine, and small intestine. The dataset includes images from various imaging modalities, with the aim of providing a comprehensive resource for training and evaluating segmentation algorithms in the medical domain.
 
