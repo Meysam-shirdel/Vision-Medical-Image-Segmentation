@@ -72,11 +72,10 @@ The dataset contains segmentation masks for multiple classes within the GI tract
 
 #### Files
 - train.csv - IDs and masks for all training objects.
-sample_submission.csv - a sample submission file in the correct format
+- sample_submission.csv - a sample submission file in the correct format
 - train - a folder of case/day folders, each containing slice images for a particular case on a given day.
-Note that the image filenames include 4 numbers (ex. 276_276_1.63_1.63.png). These four numbers are slice width / height (integers in pixels) and width/height pixel spacing (floating points in mm). The first two defines the resolution of the slide. The last two record the physical size of each pixel.
 
-Physical pixel thickness in superior-inferior direction is 3mm.
+Note that the image filenames include 4 numbers (ex. 276_276_1.63_1.63.png). These four numbers are slice width / height (integers in pixels) and width/height pixel spacing (floating points in mm). The first two defines the resolution of the slide. The last two record the physical size of each pixel.
 
 #### Columns
 - id - unique identifier for object
