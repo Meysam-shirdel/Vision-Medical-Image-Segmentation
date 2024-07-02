@@ -107,7 +107,9 @@ This part outlines the configuration settings used for training and evaluation. 
 #### metric :
         Dice().to(device)
 #### optimizer : 
-        torch.optim.SGD(model.parameters(), lr=lr, momentum=0.9)
+        lr =0.3
+        wd =1e-4
+        optimizer = optim.SGD(model.parameters(), lr=lr, weight_decay=wd, momentum=0.9, nesterov=True)
 
 ### 4.4. Train
 Here, you'll find instructions and code related to the training of the segmentation model. This section covers the process of training the model on the provided dataset.
