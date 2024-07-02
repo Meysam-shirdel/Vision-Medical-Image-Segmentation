@@ -102,6 +102,13 @@ model = smp.Unet(
 ### 4.3. Configurations
 This part outlines the configuration settings used for training and evaluation. It includes information on hyperparameters, optimization algorithms, loss function, metric, and any other settings that are crucial to the model's performance.
 
+#### loss_fn : 
+        smp.losses.DiceLoss(mode='multilabel')
+#### metric :
+        Dice().to(device)
+#### optimizer : 
+        torch.optim.SGD(model.parameters(), lr=lr, momentum=0.9)
+
 ### 4.4. Train
 Here, you'll find instructions and code related to the training of the segmentation model. This section covers the process of training the model on the provided dataset.
 
