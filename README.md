@@ -83,7 +83,21 @@ Note that the image filenames include 4 numbers (ex. 276_276_1.63_1.63.png). The
 - segmentation - RLE-encoded pixels for the identified object
 
 ### 4.2. Model
-In this subsection, the architecture and specifics of the deep learning model employed for the segmentation task are presented. It describes the model's layers, components, libraries, and any modifications made to it.
+
+We used UNet from a [Library](https://github.com/qubvel/segmentation_models.pytorch?tab=readme-ov-file#installation) in github.
+Segmentation model is just a PyTorch nn.Module, which can be created as easy as:
+
+!pip install segmentation-models-pytorch
+
+import segmentation_models_pytorch as smp
+
+model = smp.Unet(
+    encoder_name="resnet34",        # choose encoder, e.g. mobilenet_v2 or efficientnet-b7
+    encoder_weights="imagenet",     # use `imagenet` pre-trained weights for encoder initialization
+    in_channels=1,                  # model input channels (1 for gray-scale images, 3 for RGB, etc.)
+    classes=3,                      # model output channels (number of classes in your dataset)
+)
+
 
 ### 4.3. Configurations
 This part outlines the configuration settings used for training and evaluation. It includes information on hyperparameters, optimization algorithms, loss function, metric, and any other settings that are crucial to the model's performance.
