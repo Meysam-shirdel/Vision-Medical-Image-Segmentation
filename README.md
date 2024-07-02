@@ -50,6 +50,12 @@ U-Net is widely used in various biomedical image segmentation tasks, such as:
 
 U-Net's combination of convolutional layers and symmetric architecture with skip connections has set a high standard in the field of medical image segmentation, making it a foundational model for further advancements.
 
+<div align= "center">
+  <img src="method.jpg" width="600" height="400" >
+</div>
+
+For this project, as shown in the above figure, the model takes MRI scans from cancer patients as input image, then uses a UNet to obtain predicted segmented areas of patients MRI scans for "stomach", "larg bowel" and "small bowel". By employing the loss function, it compares the predicted mask to the true mask which we aim to minimize. The evaluation metric is Dice.
+
 
 ## 4. Implementation
 This section delves into the practical aspects of the project's implementation.
