@@ -64,6 +64,25 @@ This section delves into the practical aspects of the project's implementation.
 Under this subsection, you'll find information about the dataset used for the medical image segmentation task. It includes details about the dataset source, size, composition, preprocessing, and loading applied to it.
 [Dataset](https://www.kaggle.com/competitions/uw-madison-gi-tract-image-segmentation/data)
 
+UW-Madison GI Tract Image Segmentation Dataset
+
+The UW-Madison GI Tract Image Segmentation dataset consists of multi-class segmentation masks for different parts of the gastrointestinal tract, such as the stomach, large intestine, and small intestine. The dataset includes images from various imaging modalities, with the aim of providing a comprehensive resource for training and evaluating segmentation algorithms in the medical domain.
+
+The dataset contains segmentation masks for multiple classes within the GI tract, allowing for detailed analysis and segmentation of different anatomical regions. The segmentation masks are annotated by experts, ensuring high-quality and accurate labels for training and evaluation purposes.
+
+#### Files
+- train.csv - IDs and masks for all training objects.
+sample_submission.csv - a sample submission file in the correct format
+- train - a folder of case/day folders, each containing slice images for a particular case on a given day.
+Note that the image filenames include 4 numbers (ex. 276_276_1.63_1.63.png). These four numbers are slice width / height (integers in pixels) and width/height pixel spacing (floating points in mm). The first two defines the resolution of the slide. The last two record the physical size of each pixel.
+
+Physical pixel thickness in superior-inferior direction is 3mm.
+
+#### Columns
+- id - unique identifier for object
+- class - the predicted class for the object
+- segmentation - RLE-encoded pixels for the identified object
+
 ### 4.2. Model
 In this subsection, the architecture and specifics of the deep learning model employed for the segmentation task are presented. It describes the model's layers, components, libraries, and any modifications made to it.
 
