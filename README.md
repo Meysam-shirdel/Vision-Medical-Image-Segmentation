@@ -112,6 +112,34 @@ This part outlines the configuration settings used for training and evaluation. 
 ### 4.4. Train
 Here, you'll find instructions and code related to the training of the segmentation model. This section covers the process of training the model on the provided dataset.
 
+The training process consists of two sections: Finding Hyper-parameters and the Main Loop. In the Finding Hyper-parameters section, we used different scenarios to obtain the best hyper-parameters, such as learning rate, weight decay, and momentum. The results from this section were used to train the model in the Main Loop.
+
+I created a grid of learning rates and weight decays as shown below and trained the model for three epochs for each learning rate:
+
+Learning rates:  0.9, 0.5, 0.3, 0.1, 0.01 Weight decays: 1e-4, 1e-5, 1e-6 The best training loss=0.617, Dice metric=0.372 was obtained with a learning rate of 0.3 and weight decay of 1e-4, momentum of 0.9.
+
+Then, we trained the model with a learning rate of 0.3 and weight decay of 1e-4 for more epochs with this configuration.
+
+    optimizer = optim.SGD(model.parameters(), lr=lr, weight_decay=wd, momentum=0.9)
+    lr_scheduler = optim.lr_scheduler.MultiStepLR(optimizer, milestones=[5, 10, 15], gamma=0.1)
+
+we used optim.lr_scheduler for training the model with multi step learning rate and achieved  training loss=0.12, Dice metric=0.875 and Validation Loss = 0.2362, Validation Dice Metric = 0.8048 in LR= 0
+
+<div align= "center">
+  <img src="plot.jpg" width="400" height="400" >
+</div>
+
 ### 4.5. Evaluate
 In the evaluation section, the methods and metrics used to assess the model's performance are detailed. It explains how the model's segmentation results are quantified and provides insights into the model's effectiveness.
+
+The result of evaluation with test data is shown in the figure below.
+
+<div align= "center">
+  <img src="result.jpg" width="400" height="400" >
+</div>
+
+Dice metric for all the three classes is:
+Large Bowel Dice: 0.8144
+Small Bowel Dice: 0.7305
+Stomach Dice: 0.8708
 
