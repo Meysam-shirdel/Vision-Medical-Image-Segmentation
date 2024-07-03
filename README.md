@@ -87,10 +87,8 @@ Note that the image filenames include 4 numbers (ex. 276_276_1.63_1.63.png). The
 We used UNet from a [Library](https://github.com/qubvel/segmentation_models.pytorch?tab=readme-ov-file#installation) in github.
 Segmentation model is just a PyTorch nn.Module, which can be created as easy as:
 
-!pip install segmentation-models-pytorch
-
-import segmentation_models_pytorch as smp
-
+    !pip install segmentation-models-pytorch
+    import segmentation_models_pytorch as smp
     model = smp.Unet(
         encoder_name="resnet34",        # choose encoder, e.g. mobilenet_v2 or efficientnet-b7
         encoder_weights="imagenet",     # use `imagenet` pre-trained weights for encoder initialization
