@@ -135,7 +135,7 @@ In the evaluation section, the methods and metrics used to assess the model's pe
 The result of evaluation with test data is shown in the figure below.
 
 <div align= "center">
-  <img src="result.jpg" width="400" height="400" >
+  <img src="result.jpg" width="" height="500" >
 </div>
 
 Dice metric for all the three classes is:
