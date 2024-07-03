@@ -126,7 +126,7 @@ Then, we trained the model with a learning rate of 0.3 and weight decay of 1e-4 
 we used optim.lr_scheduler for training the model with multi step learning rate and achieved  training loss=0.12, Dice metric=0.875 and Validation Loss = 0.2362, Validation Dice Metric = 0.8048 in LR= 0
 
 <div align= "center">
-  <img src="plot.jpg" width="" height="" >
+  <img src="plot.jpg" width="600" height="500" >
 </div>
 
 ### 4.5. Evaluate
@@ -139,7 +139,10 @@ The result of evaluation with test data is shown in the figure below.
 </div>
 
 Dice metric for all the three classes is:
+
 Large Bowel Dice: 0.8144
+
 Small Bowel Dice: 0.7305
+
 Stomach Dice: 0.8708
 
