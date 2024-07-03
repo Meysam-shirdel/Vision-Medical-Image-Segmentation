@@ -126,7 +126,7 @@ Then, we trained the model with a learning rate of 0.3 and weight decay of 1e-4 
 we used optim.lr_scheduler for training the model with multi step learning rate and achieved  training loss=0.12, Dice metric=0.875 and Validation Loss = 0.2362, Validation Dice Metric = 0.8048 in LR= 0
 
 <div align= "center">
-  <img src="plot.jpg" width="400" height="400" >
+  <img src="plot.jpg" width="" height="" >
 </div>
 
 ### 4.5. Evaluate
