@@ -20,7 +20,7 @@ New techniques, such as computer vision using deep learning models, can aid in t
 
 ## 2. Related Works
 
-This section explores and summarizing some notable methods of medical image segmentation using deep learning models from 2015 to 2021, along with their corresponding deep learning models and links to their papers or GitHub repositories.
+This section explores and summarizing some notable methods of medical image segmentation using deep learning models from 2015 to 2021, along with their corresponding deep learning models and links to their papers or GitHub repositories .
 
 | Date       | Title                                                                 | Description                                                                                                                | Links                                                                                                                                       |
 |------------|-----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
